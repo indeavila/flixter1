@@ -25,6 +25,6 @@ class Instructor::CoursesController < ApplicationController
       @current_course ||= Course.find(params[:id])
     end
     def course_params
-    params.require(:course).permit(:title, :description, :cost)
+    params.require(:course).permit(:title, :image, :description, :cost)
     end
 end
